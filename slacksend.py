@@ -9,6 +9,7 @@ description = "Sends messages to slack's incoming webhooks via CLI"
 
 def build(options, args, message):
     payload = {}
+    attachment = None
 
     if args.attachment is not None:
         attachment = message
